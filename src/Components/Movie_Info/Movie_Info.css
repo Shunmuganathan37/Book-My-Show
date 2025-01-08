@@ -1,0 +1,19 @@
+.mufasa-con{
+    position: relative;
+    height: 60vh;
+}
+
+.mufasa-front{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    height: 60vh;
+
+}
+
+.mufasa-front .mufasa-col{
+    height: 50vh;
+}
+.mufasa-front img{
+    height:450px;
+}
