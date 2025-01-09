@@ -84,6 +84,12 @@
     display: flex;
     gap: 30px;
 
+
+}
+
+.lists > ul > .links{
+    text-decoration: none;
+    color: black;
 }
 
 .lists > ul > li:hover {
@@ -98,4 +104,10 @@
 }
 .lists2 > ul > li:hover {
     cursor: pointer;
+}
+
+
+.lists2 > ul > .links{
+    text-decoration: none;
+    color: black;
 }

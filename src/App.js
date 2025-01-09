@@ -12,27 +12,41 @@ import Premiere from './Components/Premiere/Premiere';
 import Music from './Components/Music/Music';
 import Login from './Components/Login/Login';
 import Banner from './Components/Banner/Banner';
-import { Router, Routes } from 'react-router-dom';
+import { Route, Router, Routes } from 'react-router-dom';
 import Movie_Info from './Components/Movie_Info/Movie_Info';
+import Booking from './Components/Booking/Booking';
+import Footer from './Components/Footer/Footer';
 
 
 
 function App() {
   return (
- 
-    <>
-     {/* <Banner/> */}
-     <Navbar/>
-    
-     <Rec_Movies />
-     <Live_Events/>
-     <Premiere/>
-     <Music/>
-     <Login/>
 
-     <Movie_Info/>
-     </>
-   
+    <>
+      {/* <Banner/> */}
+      <Navbar />
+    
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Rec_Movies />
+            <Live_Events />
+            <Premiere />
+            <Music />
+            
+          </> 
+        } />
+        <Route path='/login' element ={<Login/>} />
+        <Route path='/Movies' element ={<Rec_Movies/>} />
+        <Route path="/movies/:movieId" element={<Movie_Info />} />
+        <Route path="/movie/:movieId/booking" element={<Booking/>} />
+        
+
+      </Routes>
+      <Footer/>
+        {/* <SeatSelector/> */}
+    </>
+
   );
 }
 

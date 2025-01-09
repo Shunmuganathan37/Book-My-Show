@@ -12,6 +12,7 @@ import Pushpa from '../Images/rec-movie5.avif';
 // banner image
 import Banner from '../Images/banner book my show stream.avif';
 
+import { Link } from 'react-router-dom';
 
 const Rec_Movies = () => {
   return (
@@ -27,45 +28,45 @@ const Rec_Movies = () => {
 
       <div className="posts">
         <div className="row">
-          <a href="">
+          <Link to="/Movies/viduthalai">
           <div className="col">
             <img className='photo' src={Viduthalai} alt="" />
             <h1 className="title">Viduthalai Part-2</h1>
             <p className="Movie-type">Action/Crime/Drama</p>
           </div>
-          </a>
+          </Link>
           
-          <a href="">
+          <Link to="/Movies/mufasa">
           <div className="col">
             <img className='photo' src={Mufasa} alt="" />
             <h1 className="title"> Mufasa : The Lion King</h1>
             <p className="Movie-type">Adventure/Animation/Drama</p>
           </div>
-          </a>
+          </Link>
 
-          <a href="">
+          <Link to="/Movies/marco">
           <div className="col">
             <img className='photo' src={Marco} alt="" />
             <h1 className="title">Marco</h1>
             <p className="Movie-type">Action/Thriller</p>
           </div>
-          </a>
+          </Link>
 
-          <a href="">
+          <Link to="/Movies/identity">
           <div className="col">
             <img className='photo' src={Identity} alt="" />
             <h1 className="title">Identity</h1>
             <p className="Movie-type"> Action/Crime/Thriller</p>
           </div>
-          </a>
+          </Link>
 
-          <a href="">
+          <Link to="/Movies/pushpa-2">
           <div className="col">
             <img className='photo' src={Pushpa} alt="" />
             <h1 className="title"> Pushpa 2: The Rule</h1>
             <p className="Movie-type">Action/Thriller</p>
           </div>
-          </a>
+          </Link>
 
           
         </div>

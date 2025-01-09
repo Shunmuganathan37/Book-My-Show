@@ -5,6 +5,8 @@ import Logo from '../Images/Book MY Show.png'
 
 import { IoMenu } from "react-icons/io5";
 
+import { Link } from "react-router-dom";
+
 
 
 const Navbar = () => {
@@ -13,7 +15,7 @@ const Navbar = () => {
             <div className="header1">
                 <div className="nav-left">
                     <div className="logo">
-                        <a href=""><img src={Logo} alt="" /></a>
+                      <Link to="/"> <a href=""><img src={Logo} alt="" /></a></Link> 
                     </div>
                     <div>
                     <input className="input-value" type="text" placeholder="Search for Movies,Events,Plays,Sports aand Activities" />
@@ -25,7 +27,9 @@ const Navbar = () => {
                         <p>Chennai <span></span></p>
                     </div>
                     <div className="signin">
+                       <Link to="/login">
                         <button className="btn">Sign in</button>
+                        </Link>
                     </div>
 
                     <div className="menu-icon">
@@ -39,22 +43,22 @@ const Navbar = () => {
                        <div className="head-left">
                              <div className="lists">
                                 <ul>
-                                    <li>Movies</li>
-                                    <li>Stream</li>
-                                    <li>Events</li>
-                                    <li>Plays</li>
-                                    <li>Sports</li>
-                                    <li>Activities</li>
+                                  <Link to="/Movies" className="links"> <li>Movies</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Stream</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Events</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Plays</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Sports</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Activities</li></Link> 
                                 </ul>
                              </div>
                        </div>
                        <div className="head-right">
                        <div className="lists2">
                                 <ul>
-                                    <li>ListYourShow</li>
-                                    <li>Corporates</li>
-                                    <li>Offers</li>
-                                    <li>Gift Cards</li>
+                                  <Link to="/Movies" className="links"> <li>ListYourShow</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Corporates</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Offers</li></Link> 
+                                  <Link to="/Movies" className="links"> <li>Gift Cards</li></Link> 
                                </ul>
                              </div>
                        </div>
