@@ -1,0 +1,31 @@
+footer {
+    background: rgb(2, 2, 53);
+   
+}
+
+.footer-head{
+    color: white;
+    padding: 40px ;
+}
+
+.footer-head .footer-icon{
+    font-size: 30px;
+    margin-right: 2%;
+}
+
+.footer-head span{
+    font-weight: 700;
+    margin-right: 2%;
+}
+
+.footer-btn{
+    padding: 15px;
+    border:none;
+    outline: none;
+    background: rgb(232, 49, 82);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 20%;
+    cursor: pointer ;
+}

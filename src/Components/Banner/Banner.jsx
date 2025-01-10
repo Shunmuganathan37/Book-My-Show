@@ -1,32 +1,32 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-
+import './Banner.css';
 import Image1 from '../Images/slide1.avif';
 import Image2 from '../Images/slide2.avif';
+import { Carousel } from "react-bootstrap";
 
-const Banner = () => {
+const Banner= () => {
   return (
-    <Carousel>
+  
+      <Carousel interval={3000}>  
       <Carousel.Item>
         <img
           className="d-block w-100"
           src={Image1}
-          alt="First slide"
+          alt="First banner"
         />
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
+        
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
           src={Image2}
-          alt="Second slide"
+          alt="Second banner"
         />
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
+     
       </Carousel.Item>
+
+      
     </Carousel>
   );
 };

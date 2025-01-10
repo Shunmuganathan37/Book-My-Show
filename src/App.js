@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 // bootstrap css
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import Navbar from './Components/Navbar/Navbar';
@@ -44,7 +44,6 @@ function App() {
 
       </Routes>
       <Footer/>
-        {/* <SeatSelector/> */}
     </>
 
   );

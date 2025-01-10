@@ -1,75 +1,33 @@
-.container{
-    width: 100%;
-    background-color: rgb(242, 239, 239);
-}
-
-.topic{
-    display: flex;
-    justify-content: space-around;
-}
-.heading{
-    color: rgb(36, 31, 31);
-}
-.heading > span {
-    color: rgb(242, 70, 70);
-}
-.topic-right{
-    padding-top: 40px;
-    margin-left: 50%;
-}
-.topic-right > span {
-
-    color: rgb(236, 63, 63);
-    cursor: pointer;
-}
-
-
-.posts {
-    width: 100%;
-}
-
-.row{
-    display: flex;
-    width: 90%;
-    margin-left: 5%;
-    justify-content: space-evenly;
-}
-
-.row > a {
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .heading span {
+    color: #ff6347;
+  }
+  
+  .card img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body button {
     text-decoration: none;
-    color: rgb(113, 113, 113);
-    
-}
-.col {
-    width: 16%;
-}
-
-.col .photo {
-    height: 350px;
-    border-radius: 10px;
-}
-
-.title{
-    font-size: 18px;
-    color: black;
-    white-space: nowrap;
-}
-
-.movie-type{
-    font-size: 15px;
-    /* white-space: nowrap; */
-}
-
-
-/* banner*/
-
-.banner {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 50px;
-    padding-bottom: 50px;
-}
-
-.banner > img {
-    width: 100%;
-}
+    color: #007bff;
+  }
+  

@@ -1,32 +1,18 @@
-main{
-    background-color: rgb(242, 239, 239);
-
-}
-
-.live-events{
-    width: 100%;
-}
-
-.head{
+.live-events {
+    text-align: center;
+  }
+  
+  .head {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 30px;
-    margin-left: 60px;
-    padding-bottom: 30px;
-}
-
-.row {
-    display: flex;
-    width: 94%;
-    margin-left: 3%;
-    justify-content: space-evenly;
-}
-
-.col {
-    width: 18%;
-    margin-top: 40px;
-    padding-bottom: 60px;
-}
-.col .image{
-    border-radius: 20px;
-    height: 230px;
-}
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  

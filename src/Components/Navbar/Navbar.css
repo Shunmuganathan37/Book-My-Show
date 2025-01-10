@@ -1,113 +1,21 @@
-.header1{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 15px;
-  display: flex;
-}
-
-.nav-left{
-    display: flex;
-    width: 50%;
-    gap: 20px;
-}
-
-.logo img {
-    width: 140px;
-    height: 50px;
-}
-.input-value{
-    width: 500px;
-    border: 0.2px solid grey;
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    max-width: 150px;
     border-radius: 10px;
-    padding: 5px;
-    height: 25px;
-    margin-top: 8px;
-    margin-left: 10px;
-    outline: none;
-    
-}
-
-.nav-right{
-    display: flex;
-    width: 48%;
-    justify-content: center;
-}
-.city > p {
-    padding: 5px;
-    margin-left: 120px;
-    
-}
-
-
-.signin{
-    margin-top: 17px;
-    margin-left: 40px;
-    
-}
-.btn{
-    background-color: rgb(235, 63, 63);
-    color: white;
-    border: none;
-    padding:5px  15px;
-    border-radius:10px;
-    cursor: pointer;
-    /* outline: none; */
-}
-
-.menu-icon{
-    margin-top: -5px;
-    margin-left: 50px;
-    cursor: pointer;
-}
-
-.menu-icon .react-icon{
-    width: 50px;
-    height: 70px;
-}
-
-/* header 2 */
-.header2{
-    display: flex;
-    width: 100%;
-    background-color: rgb(244, 244, 244);
-    border-bottom: 1px solid rgb(172, 172, 172);
-}
-
-.head-left{
-    width: 60%;
-    margin-left: 50px;
-}
-
-.lists > ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-
-
-}
-
-.lists > ul > .links{
-    text-decoration: none;
-    color: black;
-}
-
-.lists > ul > li:hover {
-    cursor: pointer;
-}
-
-.lists2 > ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    font-size: 15px;
-}
-.lists2 > ul > li:hover {
-    cursor: pointer;
-}
-
-
-.lists2 > ul > .links{
-    text-decoration: none;
-    color: black;
-}
+  }
+  
+  .input-value {
+    width: 350px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+  }
+  
+  .btn {
+    border-radius: 20px;
+  }
+  

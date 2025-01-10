@@ -1,70 +1,66 @@
 import React from "react";
 import './Navbar.css';
-
-import Logo from '../Images/Book MY Show.png'
-
-import { IoMenu } from "react-icons/io5";
-
+import Logo from '../Images/Book MY Show.png';
 import { Link } from "react-router-dom";
+import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
 
+const NavbarComponent = () => {
+  return (
+    <header>
+      <Navbar  expand="lg">
+        <Container>
+      
+          <Navbar.Brand as={Link} to="/">
+            <img src={Logo} alt="BookMyShow" className="logo" />
+          </Navbar.Brand>
 
+          <Form className="d-flex ms-auto  w-100 w-md-50">
+            <FormControl
+              type="search"
+              placeholder="Search for Movies, Events, Plays, Sports, and Activities"
+              className="input-value"
+              aria-label="Search"
+            />
+          </Form>
 
-const Navbar = () => {
-    return (
-        <header>
-            <div className="header1">
-                <div className="nav-left">
-                    <div className="logo">
-                      <Link to="/"> <a href=""><img src={Logo} alt="" /></a></Link> 
-                    </div>
-                    <div>
-                    <input className="input-value" type="text" placeholder="Search for Movies,Events,Plays,Sports aand Activities" />
-                    </div>
-                </div>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Item>
+                <Nav.Link href="#">Chennai</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link to="/login">
+                  <Button  style={{background:'white',color:'red'}} className="btn text-danger">LogIN</Button>
+                </Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
-                <div className="nav-right">
-                    <div className="city">
-                        <p>Chennai <span></span></p>
-                    </div>
-                    <div className="signin">
-                       <Link to="/login">
-                        <button className="btn">Sign in</button>
-                        </Link>
-                    </div>
+      <Navbar  variant="light" className="d-none d-md-block">
+      <div className="d-flex justify-content-between">
+  <Nav>
+    <Link to="/Movies" className="nav-link">Movies</Link>
+    <Link to="/Movies" className="nav-link">Stream</Link>
+    <Link to="/Movies" className="nav-link">Events</Link>
+    <Link to="/Movies" className="nav-link">Plays</Link>
+    <Link to="/Movies" className="nav-link">Sports</Link>
+    <Link to="/Movies" className="nav-link">Activities</Link>
+  </Nav>
 
-                    <div className="menu-icon">
-                    <IoMenu className="react-icon" />
-                    </div>
+  <Nav>
+    <Link to="/Movies" className="nav-link">List Your Show</Link>
+    <Link to="/Movies" className="nav-link">Corporates</Link>
+    <Link to="/Movies" className="nav-link">Offers</Link>
+    <Link to="/Movies" className="nav-link">Gift Cards</Link>
+  </Nav>
+</div>
 
-                </div>
-            </div>
-
-            <div className="header2">
-                       <div className="head-left">
-                             <div className="lists">
-                                <ul>
-                                  <Link to="/Movies" className="links"> <li>Movies</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Stream</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Events</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Plays</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Sports</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Activities</li></Link> 
-                                </ul>
-                             </div>
-                       </div>
-                       <div className="head-right">
-                       <div className="lists2">
-                                <ul>
-                                  <Link to="/Movies" className="links"> <li>ListYourShow</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Corporates</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Offers</li></Link> 
-                                  <Link to="/Movies" className="links"> <li>Gift Cards</li></Link> 
-                               </ul>
-                             </div>
-                       </div>
-            </div>
-        </header>
-    )
+      </Navbar>
+    </header>
+  );
 }
 
-export default Navbar;
+export default NavbarComponent;

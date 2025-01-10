@@ -1,42 +1,34 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
+
+import { GiBarracksTent } from "react-icons/gi";
+
+import cutomer from '../Images/footer1';
+import money from '../Images/footer2';
+import mail from '../Images/footer3';
+
+
 const Footer = () => {
-    return (
+  return (
+  
+    <footer>
         <div className="footer">
-            <footer>
-                <div class="foot-container">
-                    <div class="footer-content">
-                        <h3>Contact Us</h3>
-                        <p>Email:Info@example.com</p>
-                        <p>Phone:+121 56556 565556</p>
-                        <p>Address:Your Address 123 street</p>
-                    </div>
-                    <div class="footer-content">
-                        <h3>Quick Links</h3>
-                        <ul class="foot-list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-content">
-                        <h3>Follow Us</h3>
-                        <ul class="social-icons">
-                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
+            <div className="footer-head">
+               <GiBarracksTent className='footer-icon'/><span>List your Show</span> Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
+            <button className='footer-btn'>Contact Today!</button>
+            </div>
+            <hr />
+
+            <div className="footer-care">
+                <div className="footer-row">
+                    <div className="footer-col">
+                            {/* <img src={cutomer} alt="" /> */}
                     </div>
                 </div>
-                <div class="foot-bottom-bar">
-                    <p>&copy; 2023 your company . All rights reserved</p>
-                </div>
-            </footer>
+            </div>
         </div>
-    )
+    </footer>
+  )
 }
 
 export default Footer
