@@ -1,52 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import styled, { ThemeProvider } from 'styled-components';
+import { darkTheme } from './utils/Themes';
+import {BrowserRouter as  Router } from 'react-router-dom';
 
-// bootstrap css
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Components  
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Skill from './components/Skills/Skill';
+import Education from './components/Education/Education';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 
 
-import Navbar from './Components/Navbar/Navbar';
-import Rec_Movies from './Components/Rec-Movies/Rec_Movies';
-import Live_Events from './Components/Live_Events/Live_Events';
-import Premiere from './Components/Premiere/Premiere';
-import Music from './Components/Music/Music';
-import Login from './Components/Login/Login';
-import Banner from './Components/Banner/Banner';
-import { Route, Router, Routes } from 'react-router-dom';
-import Movie_Info from './Components/Movie_Info/Movie_Info';
-import Booking from './Components/Booking/Booking';
-import Footer from './Components/Footer/Footer';
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  width: 100%;
+  height:100%;
+  overflow-x: hidden;
+`;
 
+
+const Wrapper = styled.div`
+  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
+`
 
 
 function App() {
   return (
+    <ThemeProvider theme={darkTheme}>
 
-    <>
-      {/* <Banner/> */}
-      <Navbar />
-    
-      <Routes>
-        <Route path='/' element={
-          <>
-            <Rec_Movies />
-            <Live_Events />
-            <Premiere />
-            <Music />
-            
-          </> 
-        } />
-        <Route path='/login' element ={<Login/>} />
-        <Route path='/Movies' element ={<Rec_Movies/>} />
-        <Route path="/movies/:movieId" element={<Movie_Info />} />
-        <Route path="/movie/:movieId/booking" element={<Booking/>} />
-        
+      <Router>
+        <Navbar />
+        <Body>
+          <Hero />
+          <Wrapper>
+            <Skill/>
+            <Education/>
+            <Contact/>
+          </Wrapper>
+          <Footer/>
+        </Body>
+      </Router>
 
-      </Routes>
-      <Footer/>
-    </>
 
-  );
+    </ThemeProvider>
+  )
 }
 
 export default App;
